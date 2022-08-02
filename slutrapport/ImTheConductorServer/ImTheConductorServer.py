@@ -114,8 +114,9 @@ def VGG16_predict_breed(tens):
     return dg
 
 def extract_VGG16(tensor):
-    model1 = VGG16(weights=None, include_top=False)
-    model1.load_weights(local_weights_file_vgg16)
+    model1 = VGG16(weights='imagenet', include_top=False)
+    #model1 = VGG16(weights=None, include_top=False)
+    #model1.load_weights(local_weights_file_vgg16)
     return model1.predict(preprocess_input(tensor))
 
 #
