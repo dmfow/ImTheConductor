@@ -1,0 +1,4 @@
+the filesize was too large
+use https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz
+rename it to dogVgg16.npz and put it in this library
+
